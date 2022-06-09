@@ -42,22 +42,39 @@ public class FizzBuzz {
 		}
 		
 		//Numero valido, esci dal while
-		System.out.println("Conterò fino a " + finoANum + ". Pronto? Cominciamo!");
+		System.out.println("Conterò fino a " + finoANum + ". Pronto? Cominciamo!\n");
 		
 		//Stampa risultati
 		for (int n=1;n <= finoANum; n++) {
+			
+			//versione non ottimizzata
+//			if (!(n % 3 == 0 || n % 5 == 0)) {
+//				System.out.print(n);
+//			} 
+//			 
+//			else if (n % 3 == 0 && n % 5 == 0) {
+//				System.out.println("FizzBuzz");
+//			}
+//			else if (n % 3 == 0) {
+//				System.out.println("Fizz");
+//			}
+//			else {
+//				System.out.println("Buzz");
+//			}
+			
+			
+			//versione ottimizzata
 			if (!(n % 3 == 0 || n % 5 == 0)) {
-				System.out.println(n);
+					System.out.print(n);
 			} 
-			else if (n % 3 == 0 && n % 5 == 0) {
-				System.out.println("FizzBuzz");
+			if (n % 3 == 0) {
+					System.out.print("Fizz");
 			}
-			else if (n % 3 == 0) {
-				System.out.println("Fizz");
+			if (n % 5 == 0) {
+					System.out.print("Buzz");
 			}
-			else {
-				System.out.println("Buzz");
-			}
+			System.out.println("\r");
+			
 		}
 	}
 }
