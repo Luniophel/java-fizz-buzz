@@ -28,7 +28,6 @@ public class FizzBuzz {
 		
 		//Le mie variabili
 		int finoANum;
-		boolean vaiAvanti;
 		
 		//Richiesta input all'utente
 		System.out.println("Ciao! Conosci FizzBuzz? Dimmi fino a che numero devo contare!" + "\n" + "Dimenticavo: posso contare solo fino a 199." + "\n");
@@ -73,7 +72,8 @@ public class FizzBuzz {
 			if (n % 5 == 0) {
 					System.out.print("Buzz");
 			}
-			System.out.println("\r");
+			//vai a capo per ogni risultato
+					System.out.println("\r");
 			
 		}
 		scan.close();
