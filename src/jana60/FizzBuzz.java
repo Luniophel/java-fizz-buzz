@@ -41,7 +41,24 @@ public class FizzBuzz {
 			finoANum = scan.nextInt();
 		}
 		
+		//Numero valido, esci dal while
 		System.out.println("Conterò fino a " + finoANum + ". Pronto? Cominciamo!");
+		
+		//Stampa risultati
+		for (int n=1;n <= finoANum; n++) {
+			if (!(n % 3 == 0 || n % 5 == 0)) {
+				System.out.println(n);
+			} 
+			else if (n % 3 == 0 && n % 5 == 0) {
+				System.out.println("FizzBuzz");
+			}
+			else if (n % 3 == 0) {
+				System.out.println("Fizz");
+			}
+			else {
+				System.out.println("Buzz");
+			}
+		}
 	}
-
 }
+
