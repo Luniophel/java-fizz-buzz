@@ -76,6 +76,7 @@ public class FizzBuzz {
 			System.out.println("\r");
 			
 		}
+		scan.close();
 	}
 }
 
